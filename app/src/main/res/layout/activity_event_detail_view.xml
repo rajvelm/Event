@@ -70,10 +70,10 @@
         android:id="@+id/btn_eventVideo"
         android:padding="20dp"
         />
-    <com.google.android.youtube.player.YouTubePlayerView
+    <!--<com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_videos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-    </com.google.android.youtube.player.YouTubePlayerView>
+    </com.google.android.youtube.player.YouTubePlayerView>-->
 </LinearLayout>

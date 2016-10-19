@@ -19,12 +19,13 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class EventDetailView extends AppCompatActivity implements YouTubePlayer.OnInitializedListener
+public class EventDetailView extends AppCompatActivity
+        //implements YouTubePlayer.OnInitializedListener
 {
 
-    public static final String API_KEY = "AIzaSyAEwtcEDwFjnA7EDDIPvGAJKLVRegYZGt8";
+    /*public static final String API_KEY = "AIzaSyAEwtcEDwFjnA7EDDIPvGAJKLVRegYZGt8";
     public static final String PLAYLIST_ID = "PLdgcRE6FcTGhFk5z19Jaqdu3XgP_FTrMF";
-    private static final int RECOVERY_REQUEST = 1;
+    private static final int RECOVERY_REQUEST = 1;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +40,8 @@ public class EventDetailView extends AppCompatActivity implements YouTubePlayer.
         RatingBar eventRating=(RatingBar)findViewById(R.id.detailpg_eventRating);
         Button btnEventVideo = (Button)findViewById(R.id.btn_eventVideo);
 
-        YouTubePlayerView youtubeView = (YouTubePlayerView)findViewById(R.id.youtube_videos);
-        youtubeView.initialize(API_KEY,this);
+        /*YouTubePlayerView youtubeView = (YouTubePlayerView)findViewById(R.id.youtube_videos);
+        youtubeView.initialize(API_KEY,this);*/
 
         int event_id;
         float event_rating;
@@ -73,15 +74,15 @@ public class EventDetailView extends AppCompatActivity implements YouTubePlayer.
                 {
                     @Override
                     public void onClick(View v) {
-                        /*Intent videoIndent = new Intent(EventDetailView.this,EventVideo.class);
-                        startActivity(videoIndent);*/
+                        Intent videoIndent = new Intent(EventDetailView.this,EventVideo.class);
+                        startActivity(videoIndent);
                     }
                 }
         );
     }
 
 
-    @Override
+    /*@Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
 
         youTubePlayer.setPlayerStateChangeListener(playerStateChangeListener);
@@ -165,5 +166,5 @@ public class EventDetailView extends AppCompatActivity implements YouTubePlayer.
             String error = String.format(getString(R.string.player_error), errorReason.toString());
             Toast.makeText(this, error, Toast.LENGTH_LONG).show();
         }
-    }
+    }*/
 }
