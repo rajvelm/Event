@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.lenovo.eventapp.EventDetailView">
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtView_eventId"
+        android:padding="10dp"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtView_eventName"
+        android:padding="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtView_eventCreatedBy"
+        android:padding="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtView_eventDesc"
+        android:padding="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtView_eventDate"
+        android:padding="20dp"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:id="@+id/detailpg_eventRating"
+        android:textColor="#000000"
+        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+        android:clickable="true"
+        android:numStars="5"
+        android:isIndicator="false"
+        android:progressBackgroundTint="#8e8b8b"
+        android:progressTint="#800000"
+        android:secondaryProgressTint="#8e8b8b"
+        android:layout_marginLeft="30dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:id="@+id/btn_eventVideo"
+        android:padding="20dp"
+        />
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.google.android.youtube.player.YouTubePlayerView>
+</LinearLayout>

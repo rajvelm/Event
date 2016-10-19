@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context="com.example.lenovo.eventapp.Publish">
+    <EditText
+        android:id="@+id/editText_eventName"
+        android:layout_height="wrap_content"
+        android:hint="Event Name"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp">
+    </EditText>
+    <!--<EditText
+        android:id="@+id/editText_eventUrl"
+        android:layout_height="wrap_content"
+        android:hint="Event URL"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp">
+    </EditText>-->
+    <EditText
+        android:id="@+id/editText_eventDesc"
+        android:layout_height="wrap_content"
+        android:hint="Event Description"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:layout_width="fill_parent"
+        >
+    </EditText>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/editText_eventDatetime"
+            android:layout_height="wrap_content"
+            android:hint="Event Date Time "
+            android:inputType="text"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            >
+        </EditText>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateTime Picker"
+            android:id="@+id/button_datetimepicker"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/eventType"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_title"
+        android:layout_width="fill_parent"
+        android:spinnerMode="dialog"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp">
+    </Spinner>
+
+   <Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="publish"
+    android:id="@+id/button_publish"
+     />
+
+</LinearLayout>
