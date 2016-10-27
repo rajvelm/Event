@@ -32,7 +32,6 @@
         <activity android:name=".DataListActivity" />
         <activity android:name=".EventDetailView" />
         <activity android:name=".EventVideo" />
-        <activity android:name=".EventList" />
         <activity android:name=".EvenList"></activity>
     </application>
 
